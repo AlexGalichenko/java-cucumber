@@ -1,0 +1,9 @@
+{
+  "development": {
+    "baseUrl": "https://baseurl.com",
+    "user": {
+      "userName": "user",
+      "password": "password"
+    }
+  }
+}

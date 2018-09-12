@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+    <windows>
+        <driver id="internetexplorer">
+            <version id="3.4.0">
+                <bitrate sixtyfourbit="true" thirtytwobit="false">
+                    <filelocation>http://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip</filelocation>
+                    <hash>3e79d5cf2acdd91d0ddab9f2044ce51057ff77fe</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+            </version>
+        </driver>
+        <driver id="googlechrome">
+            <version id="2.29">
+                <bitrate thirtytwobit="true" sixtyfourbit="true">
+                    <filelocation>https://chromedriver.storage.googleapis.com/2.32/chromedriver_win32.zip</filelocation>
+                    <hash>10221e778fb82bcad1602155201919fd4a3d6fc9</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+            </version>
+        </driver>
+    </windows>
+    <linux/>
+    <osx/>
+</root>
