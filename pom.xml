@@ -5,12 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>JAVA-CUCUMBER</groupId>
-    <artifactId>JAVA-CUCUMBER</artifactId>
-    <version>0.1</version>
+    <groupId>MACA</groupId>
+    <artifactId>MACA</artifactId>
+    <version>0.3</version>
 
     <properties>
         <aspectj.version>1.8.0</aspectj.version>
+        <testng.reports.directory>target</testng.reports.directory>
     </properties>
 
     <dependencies>
@@ -18,30 +19,30 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.8</version>
+            <version>LATEST</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.4.0</version>
+            <version>LATEST</version>
         </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
+            <version>LATEST</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-jvm-deps</artifactId>
-            <version>1.0.5</version>
+            <version>LATEST</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>1.2.5</version>
+            <version>LATEST</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>
@@ -53,18 +54,18 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>4.5.1</version>
+            <version>LATEST</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.lazerycode.selenium</groupId>
             <artifactId>driver-binary-downloader-maven-plugin</artifactId>
-            <version>1.0.14</version>
+            <version>LATEST</version>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.8.0</version>
+            <version>LATEST</version>
             <scope>test</scope>
         </dependency>
 
@@ -72,7 +73,7 @@
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <version>LATEST</version>
         </dependency>
         <dependency>
             <groupId>ru.yandex.qatools.allure</groupId>
@@ -126,11 +127,10 @@
 
     <build>
         <plugins>
-
             <plugin>
                 <groupId>com.github.temyers</groupId>
                 <artifactId>cucumber-jvm-parallel-plugin</artifactId>
-                <version>2.1.0</version>
+                <version>5.0.0</version>
                 <executions>
                     <execution>
                         <id>generateRunners</id>
@@ -140,7 +140,7 @@
                         </goals>
                         <configuration>
                             <useTestNG>true</useTestNG>
-                            <glue>com.epam.maca.ta.steps</glue>
+                            <glue>com.ta.steps</glue>
                             <outputDirectory>${project.build.directory}/generated-test-sources/cucumber/com/ta/runners</outputDirectory>
                             <featuresDirectory>src/test/resources/features</featuresDirectory>
                             <cucumberOutputDir>target/cucumber-parallel/</cucumberOutputDir>
@@ -158,7 +158,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
+                <version>2.22.0</version>
                 <configuration>
                     <parallel>classes</parallel>
                     <forkCount>3</forkCount>

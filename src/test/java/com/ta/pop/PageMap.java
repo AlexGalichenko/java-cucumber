@@ -2,7 +2,6 @@ package com.ta.pop;
 
 import com.ta.framework.pop.map.AbstractPageMap;
 import com.ta.framework.utils.Browser;
-import com.epam.maca.ta.pop.pages.*;
 import com.ta.pop.pages.LoginPage;
 
 public class PageMap extends AbstractPageMap {
