@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>MACA</groupId>
-    <artifactId>MACA</artifactId>
+    <groupId>JAVA-CUCUMBER</groupId>
+    <artifactId>JAVA-CUCUMBER</artifactId>
     <version>0.3</version>
 
     <properties>
